@@ -56,5 +56,65 @@ header {
     text-align: center;
     color: #A5A5A5;
     letter-spacing: 3.28px;
+}
 
+a:hover {
+    color: black;
+}
+
+hr {
+    color: #A5A5A5;
+    opacity: 0.4;
+}
+
+/*Sekcja otwierająca*/
+
+.page-main {
+    display: flex;
+}
+
+.opening-sell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-more {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 49px;
+    color: black;
+    padding: 150px 30px 30px 30px;
+
+}
+
+.open-shop {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.shop-btn {
+    display: inline-block;
+    border-radius: 40px;
+    width: 440px;
+    height: content-box;
+    padding: 25px;
+    margin-top: 20px;
+    background: #08A6E4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.bg {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
 }
