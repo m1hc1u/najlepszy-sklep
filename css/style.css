@@ -3,7 +3,58 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', 'Raleway',sans-serif;
 }
 
+/*Sekcja HEADER*/
+
+header {
+    height: 70px;
+}
+
+.page-header {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container {
+    width: 1352px;
+    justify-content: space-between;
+}
+
+.page-header .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    color: #08A6E4;
+}
+
+.page-nav {
+}
+.page-nav-list {
+    display: flex;
+}
+
+.page-nav-list li {
+    margin-left:20px;
+}
+
+.page-nav-list a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #A5A5A5;
+    letter-spacing: 3.28px;
+
+}
