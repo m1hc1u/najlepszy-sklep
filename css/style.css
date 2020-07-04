@@ -19,14 +19,14 @@ header {
 }
 
 .container {
-    width: 1352px;
-    justify-content: space-between;
+    width: 100%;
+    display: block;
+    justify-content: space-around;
 }
 
 .page-header .container {
     height: 70px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -39,12 +39,13 @@ header {
 
 .page-nav {
 }
+
 .page-nav-list {
     display: flex;
 }
 
 .page-nav-list li {
-    margin-left:20px;
+    margin:20px;
 }
 
 .page-nav-list a {
@@ -60,6 +61,7 @@ header {
 
 a:hover {
     color: black;
+    border-bottom-color: #08A6E4;
 }
 
 hr {
@@ -117,4 +119,101 @@ hr {
     width: 100%;
     justify-content: center;
     align-items: flex-end;
+}
+
+/*Sekcja statystyczna*/
+.stat-ement {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    display: block;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.stats-box {
+    display: block;
+    width: 250px;
+    padding: 50px;
+    margin: 0 50px 0 50px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stat-circle1 {
+    position: relative;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    background: #FB3B64;
+    z-index: 1;
+}
+
+.stat-img1 {
+    padding: 20px;
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    z-index: 2;
+    left: 25%;
+}
+
+.stat-img2 {
+    padding: 20px;
+    position: absolute;
+    width: 102px;
+    height: 72px;
+    z-index: 2;
+    left: 15%;
+}
+
+.stat-circle2 {
+    position: relative;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    background: #08A6E4;
+    z-index: 1;
+}
+
+.stat-img3 {
+    padding: 20px;
+    width: 83px;
+    height: 83px;
+    z-index: 2;
+    left: 35%;
+}
+
+.stat-circle3 {
+    position: relative;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    background: #55DFB4;
+    z-index: 1;
+}
+
+.stats-nr {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.stats-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: #A5A5A5;
+    font-weight: normal;
+    padding: 10px;
 }
