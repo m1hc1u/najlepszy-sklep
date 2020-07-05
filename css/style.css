@@ -1,3 +1,9 @@
+:root {
+--1st-color: #FB3B64;
+--2nd-color: #08A6E4;
+--3rd-color: #55DFB4;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -35,7 +41,7 @@ header {
     font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     font-size: 32px;
-    color: #08A6E4;
+    color: var(--2nd-color);
 }
 
 .page-nav {
@@ -64,7 +70,7 @@ a:hover {
 }
 
 li:hover {
-    border-bottom: 1px solid #08A6E4;
+    border-bottom: 1px solid var(--2nd-color);
 }
 
 /*Sekcja otwierająca*/
@@ -102,7 +108,7 @@ li:hover {
     height: content-box;
     padding: 25px;
     margin-top: 20px;
-    background: #08A6E4;
+    background: var(--2nd-color);
     font-size: 16px;
     color: white;
     text-decoration: none;
@@ -150,7 +156,7 @@ li:hover {
     border-radius: 50%;
     width: 63px;
     height: 63px;
-    background: #FB3B64;
+    background: var(--1st-color);
     z-index: 1;
 }
 
@@ -177,7 +183,7 @@ li:hover {
     border-radius: 50%;
     width: 63px;
     height: 63px;
-    background: #08A6E4;
+    background: var(--2nd-color);
     z-index: 1;
 }
 
@@ -195,7 +201,7 @@ li:hover {
     border-radius: 50%;
     width: 63px;
     height: 63px;
-    background: #55DFB4;
+    background: var(--3rd-color);
     z-index: 1;
 }
 
@@ -220,9 +226,10 @@ li:hover {
 
 .benefit-main {
     width: 100%;
-    height: 1000px;
+    height: auto;
     display: flex;
     background: #F7F7F7;
+    justify-content: center;
 }
 
 .benefit-boxes {
@@ -231,79 +238,153 @@ li:hover {
     padding: 100px 0;
     width: 1124px;
     flex-direction: column;
-    align-items: flex-end;
-    margin-left: 50px;
+    align-items: center;
+    margin: 50px;
 }
 .benefit-wide {
     width: 1124px;
-    height: 370px;
+    height: auto;
 }
 
 .benefit-text {
     text-align: left;
     display: block;
+    width: 50%;
+}
+
+.benefit-wide--first, .benefit-wide--second {
+    display: flex;
+    border: 1px solid rgba(165, 165, 165, 0.2);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 37px;
+}
+
+.benefit-laptop {
+    --kolor-przewodni: var(--1st-color);
+}
+
+.benefit-telefon {
+    --kolor-przewodni: var(--2nd-color);
+}
+
+.benefit-wide--second benefit-telefon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-rozpoznawalność {
+    --kolor-przewodni: var(--3rd-color);
+}
+
+.benefit-text:last-child {
+    width: 100%;
 }
 
 .b-h2-text {
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     font-weight: normal;
-    margin: 20px;
-    display: block;
+    margin: 1px;
+    display: flex;
+    padding: 30px;
+    width: 420px;
 }
 
-.benefit-wide--first {
-    display: block;
-    border: 1px solid rgba(165, 165, 165, 0.2);
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 37px;
+.descr-text1, .descr-text2, .descr-text3 {
 }
 
-.benefit-wide--second {
+.descr-text {
+    max-width: 420px;
+    font-size: 16px;
+    padding: 30px;
+    margin: 1px;
+}
+
+.descr-text::after {
+    content: " ";
+    width: 332px;
+    height: 4px;
+    background-color: var(--kolor-przewodni);
     display: block;
-    border: 1px solid rgba(165, 165, 165, 0.2);
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 37px;
+    margin-top: 50px;
+}
+
+.benefit-behind-img-box {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    position: relative;
 }
 
 .benefit-narrow {
     display: flex;
+    width: 1124px;
 }
 
 .benefit-narrow-left {
-    display: block;
+    display: flex;
     border: 1px solid rgba(165, 165, 165, 0.2);
     border-radius: 5px;
     width: 70%;
     margin-right: 37px;
 }
 
-.benefit-narrow-text {
+.benefit-wide--first, .benefit-wide--second, .benefit-narrow-left {
+    background: white;
+}
 
+.benefit-img1 {
+    position: relative;
+    border-radius: 41px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    width: 120px;
+    height: 120px;
+    background: var(--1st-color);
+    z-index: 1;
+}
+
+.benefit-img2 {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: var(--2nd-color);
+    z-index: 1;
+}
+
+.benefit-img1 img {
+    position: relative;
+    left: 50px;
+    top: 70px;
+    z-index: 2;
+    width: 400px;
+    height: 200px;
+}
+
+.benefit-img2 img {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 300px;
 }
 
 .benefit-narrow-box {
-    justify-content: right;
-    display: block;
     border: 1px solid rgba(165, 165, 165, 0.2);
     border-radius: 5px;
     width: 440px;
-    background: #55DFB4;
+    background: var(--3rd-color);
     height: 370px;
-}
-
-.benefit-img {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.benefit-img img {
+.benefit-img3 img {
     position: relative;
     z-index: 2;
-}
-
-.descr-text {
-    width: 416px;
-    font-size: 16px;
+    width: 295px;
+    height: auto;
+    top: 25px;
 }
