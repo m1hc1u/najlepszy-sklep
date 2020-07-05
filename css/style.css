@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Open Sans', 'Raleway',sans-serif;
+    font-family: 'Open Sans',sans-serif;
 }
 
 /*Sekcja HEADER*/
@@ -45,11 +45,10 @@ header {
 }
 
 .page-nav-list li {
-    margin:20px;
+    margin: 20px;
 }
 
 .page-nav-list a {
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 11px;
     text-transform: uppercase;
@@ -61,7 +60,10 @@ header {
 
 a:hover {
     color: black;
-    border-bottom-color: #08A6E4;
+}
+
+li:hover {
+    border-bottom: 1px solid #08A6E4;
 }
 
 hr {
@@ -92,7 +94,6 @@ hr {
 }
 
 .open-shop {
-    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 16px;
     padding: 15px;
@@ -106,7 +107,6 @@ hr {
     padding: 25px;
     margin-top: 20px;
     background: #08A6E4;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: white;
     text-decoration: none;
@@ -158,12 +158,12 @@ hr {
 }
 
 .stat-img1 {
-    padding: 20px;
+    padding: 10px;
     position: absolute;
-    height: 85px;
-    width: 85px;
+    height: 75px;
+    width: 75px;
     z-index: 2;
-    left: 25%;
+    left: 30%;
 }
 
 .stat-img2 {
@@ -185,11 +185,12 @@ hr {
 }
 
 .stat-img3 {
-    padding: 20px;
-    width: 83px;
-    height: 83px;
+    position: absolute;
+    padding: 10px;
+    width: 73px;
+    height: 73px;
     z-index: 2;
-    left: 35%;
+    left: 25%;
 }
 
 .stat-circle3 {
@@ -216,4 +217,23 @@ hr {
     color: #A5A5A5;
     font-weight: normal;
     padding: 10px;
+}
+
+/*Benefity*/
+
+.benefit-main {
+    width: 100%;
+    display: flex;
+    background: #F7F7F7;
+}
+
+.benefit-boxes {
+    height: 370px;
+    width: 1124px;
+    margin: 19px;
+}
+
+.benefit-wide {
+    width: border-box;
+
 }
