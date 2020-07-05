@@ -388,3 +388,38 @@ li:hover {
     height: auto;
     top: 25px;
 }
+
+/*Cennik*/
+
+/*Kontakt*/
+
+/*Stopka*/
+footer {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.stopka {
+    height: 100px;
+    box-shadow: 0 -4px 5px #00000029;
+}
+
+.treść-stopki {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tekst-stopki {
+    display: flex;
+}
+
+.logo-stopka {
+    color: var(--2nd-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 26px;
+}
